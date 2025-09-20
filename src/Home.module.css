@@ -1,0 +1,34 @@
+.baner {
+text-align: center;
+}
+
+.baner img {
+    width: 109rem;
+    padding: 0px 15px 0 0px;
+    border-radius: 50px;
+}
+
+.maghale{
+color: #fff;
+color: #fff;
+position: absolute;
+left: 20rem;
+top: 44rem;
+}
+.rectangle{
+    
+    position: absolute;
+    top: 4rem;
+    right: 20px;
+
+}
+.text {
+    margin: 0px 0px -63px 0px;
+    text-align: center;
+    color: #fff;
+    padding: 92px 0px 0px 0px;
+}
+
+.naghadvbarasi{
+    display: flex;
+}
