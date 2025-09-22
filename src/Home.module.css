@@ -23,7 +23,7 @@ top: 44rem;
 
 }
 .text {
-    margin: 0px 0px -63px 0px;
+    margin: 0px 0px 73px 0px;
     text-align: center;
     color: #fff;
     padding: 92px 0px 0px 0px;
@@ -31,4 +31,17 @@ top: 44rem;
 
 .naghadvbarasi{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 187px;
+}
+.last{
+    text-align: center;
+    padding: 10px 10px 29px 10px;
+}
+.sabtnam button{
+    width: 30rem;
+  
+    margin: 0 107px 0px 0px;
+    height: 51px;
 }
