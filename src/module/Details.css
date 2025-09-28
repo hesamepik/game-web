@@ -1,0 +1,116 @@
+.details-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #0f0f0f 0%, #1a1a1a 100%);
+  font-family: 'Vazirmatn', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(31,31,31,0.95);
+  border-radius: 30px;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 30px rgba(106,17,203,0.7), 0 0 60px rgba(37,117,252,0.4);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+.details-container::before {
+  content: "";
+  position: absolute;
+  top: -3px; left: -3px; right: -3px; bottom: -3px;
+  border-radius: 33px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc, #5E60CE, #5390D9);
+  z-index: -1;
+  filter: blur(15px);
+}
+
+.details-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.details-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.8);
+}
+
+.details-info h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.details-info h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.details-info button {
+  font-family: 'Inter', 'Vazirmatn', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 14px 35px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  box-shadow: 0 5px 15px rgba(106,17,203,0.5);
+  width: 10rem;
+}
+
+.details-info button:hover {
+  transform: scale(1.07) rotate(-1deg);
+  box-shadow: 0 8px 25px rgba(106,17,203,0.8);
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+/* Badge */
+.details-container::after {
+  content: "جدید";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #6a11cb;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(106,17,203,0.5);
+}
+
+/* ریسپانسیو */
+@media (max-width: 640px) {
+  .details-container {
+    padding: 30px 20px;
+  }
+
+  .details-img img {
+    max-width: 100%;
+  }
+}

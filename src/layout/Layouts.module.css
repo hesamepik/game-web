@@ -1,0 +1,166 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+
+   
+}
+.navbar li{
+   padding: 47px;
+   list-style: none;
+   color: #fff;
+   text-decoration: none;
+}
+
+.leftnavbar ul { 
+    display: flex
+    ;
+        justify-content: space-between;
+        margin: 61px;
+        padding: 0px;
+        gap: 31px;
+    }
+
+.leftnavbar ul li{
+    padding: 47px;
+    list-style: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+ }
+button {
+    background-color: #6C5DD3;
+    width: 99px;
+    height: 31px;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: solid;
+}
+
+
+footer{
+    display: flex;
+    justify-content:space-between;
+    color: #fff;
+    padding: 50px;
+    background-color: #33353B;
+}
+
+.fimg{
+    display: flex ;
+        margin: -17px;
+        color: #fff;
+        gap: 18px;
+        padding: 15px;
+}
+.fimg img{
+height: 75px;
+
+}
+.tow ul {
+    padding: 0;
+    margin: 0;
+}
+.tow ul li {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+   
+  }
+  
+  .inputField {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    direction: rtl;
+  }
+  
+  .inputButton {
+    color: white;
+    border: none;
+    width: 49px;
+    height: 38px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s 
+ease;
+  }
+  
+  .inputButton:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+
+
+
+
+.imageWrapper {
+    position: relative;
+    width: 300px; /* یا هر اندازه‌ای که می‌خوای */
+    height: auto;
+  }
+  
+  .backgroundImage {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .overlayImage {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 279px;
+    border-radius: 10px;
+  }
+  
+  .social{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    background-color: #FF754C;
+  }
+  .social h3 {
+    color: #fff;
+    padding: 10px;
+  }
+  .iconso{
+    padding: 26px;
+    gap: 26px;
+    display: flex
+;  
+  }

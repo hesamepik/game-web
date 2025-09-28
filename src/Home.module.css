@@ -1,0 +1,196 @@
+.baner {
+  text-align: center;
+}
+
+.baner img {
+  width: 109rem;
+  max-width: 100%;
+  padding: 0 15px 0 0;
+  border-radius: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.maghale {
+  color: #fff;
+  position: absolute;
+  left: 17rem;
+  top: 40rem;
+}
+
+.rectangle {
+  position: absolute;
+  top: 4rem;
+  right: 20px;
+  max-width: 400px;
+}
+
+.text {
+  margin: 0 0 73px 0;
+  text-align: center;
+  color: #fff;
+  padding: 92px 0 0 0;
+}
+
+.naghadvbarasi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 187px;
+}
+
+.last {
+  text-align: center;
+  padding: 10px 10px 29px 10px;
+}
+
+.sabtnam button {
+  width: 30rem;
+  margin: 0 107px 0 0;
+  height: 51px;
+}
+
+h1 {
+  font-family: 'Vazirmatn', sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+h3 {
+  font-family: 'Vazirmatn', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  line-height: 1.8;
+}
+
+button {
+  font-family: 'Inter', 'Vazirmatn', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 25px;
+  line-height: 1.5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
+}
+
+.sabtnam button {
+  width
+: 100%;
+    max-width: 58rem;
+    height: 55px;
+    margin: 20px auto;
+    display: block;
+    position: absolute;
+    top: 56rem;
+    left: 70%;
+    transform: translateX(-50%);
+}
+
+.last button {
+  width: 22rem;
+}
+
+/* ======= ریسپانسیو کل صفحه ======= */
+@media (max-width: 1200px) {
+  .maghale {
+    left: 10rem;
+    top: 35rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .maghale {
+    left: 5rem;
+    top: 30rem;
+  }
+
+  .rectangle {
+    max-width: 350px;
+  }
+
+  .baner img {
+    max-width: 90%;
+  }
+
+  .naghadvbarasi {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .baner img {
+    max-width: 100%;
+  }
+
+  .footerbaner {
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .maghale, .rectangle {
+    position: static;
+    margin: 10px auto;
+    text-align: center;
+    top: auto;
+    left: auto;
+  }
+
+  .sabtnam button {
+    position: static;
+    transform: none;
+    margin: 20px auto;
+  }
+
+  .last button {
+    width: 80%;
+  }
+
+  .bodyone {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .bodyone {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .last button {
+    width: 90%;
+  }
+}
