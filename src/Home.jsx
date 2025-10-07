@@ -14,7 +14,7 @@ function Home() {
 <div className={styles.footerbaner}>
 <div className={styles.sabtnam}>
 
-<button> ثبت نام کنید </button>
+<a href='/singup'><button> ثبت نام کنید </button> </a>
 </div>
 <div className={styles.maghale}>
    <img src={img2}></img>

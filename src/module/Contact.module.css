@@ -1,0 +1,140 @@
+.contactPage {
+  background-color: #34313c;
+  min-height: 100vh;
+  color: #fff;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #ccc;
+  text-align: center;
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.contactContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* بخش اطلاعات تماس */
+.infoSection {
+  flex: 1;
+  min-width: 300px;
+  background-color: #2c2935;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoSection h2 {
+  margin-bottom: 15px;
+  color: #FF754C;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  font-size: 1.5rem;
+}
+
+.socials a {
+  color: #FF754C;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #2980b9;
+}
+
+/* نقشه */
+.map {
+  margin-top: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 200px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* فرم تماس */
+.contactForm {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #2c2935;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.contactForm label {
+  font-size: 1rem;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #444052;
+  color: #fff;
+  resize: none;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+  color: #bbb;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border: 2px solid #FF754C;
+}
+
+.contactForm .button {
+  background-color: #FF754C;
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactForm .button:hover {
+  background-color: #2980b9;
+}

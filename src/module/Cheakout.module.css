@@ -1,0 +1,173 @@
+/* Cart.module.css */
+
+/* کل کانتینر سبد خرید */
+.cart {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+/* عنوان سبد خرید */
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #7c3aed, #a259ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* لیست آیتم‌ها */
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* کارت محصول */
+.item {
+  background: rgba(124, 58, 237, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(124, 58, 237, 0.3);
+}
+
+/* تصویر محصول */
+.image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+  box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.4);
+  transition: transform 0.4s ease;
+}
+
+.item:hover .image {
+  transform: scale(1.05);
+}
+
+/* اطلاعات محصول */
+.info h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.info h3 {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* دکمه‌های کنترل محصول */
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.controls button {
+  background: linear-gradient(135deg, #7c3aed, #a259ff);
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.controls button:hover {
+  background: linear-gradient(135deg, #a259ff, #7c3aed);
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.5);
+}
+
+/* نمایش تعداد محصول */
+.qty {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+/* بخش جمع کل */
+.summary {
+  margin-top: 50px;
+  background: rgba(124, 58, 237, 0.1);
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.2);
+}
+
+.summary h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.summary p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.summary button {
+  padding: 14px 0;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #7c3aed, #a259ff);
+  cursor: pointer;
+  transition: all 0.35s ease;
+  margin-top: 15px;
+}
+
+.summary button:hover {
+  background: linear-gradient(135deg, #a259ff, #7c3aed);
+  transform: scale(1.08);
+  box-shadow: 0 12px 40px rgba(124, 58, 237, 0.6);
+}
+
+/* وقتی سبد خالیه */
+.empty {
+  text-align: center;
+  margin: 120px 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #7c3aed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .items {
+    grid-template-columns: 1fr;
+  }
+
+  .controls {
+    justify-content: center;
+  }
+
+  .summary button {
+    width: 90%;
+  }
+}

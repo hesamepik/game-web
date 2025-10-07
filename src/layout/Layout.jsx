@@ -14,8 +14,14 @@ import mah from "../../ایکن ها/mah.png"
  import twiter from "../../ایکن ها/twiter.png"
 import { TiDeleteOutline } from "react-icons/ti";
 import { FaLongArrowAltLeft } from "react-icons/fa";
+import { Link } from 'react-router-dom'
+import { usecard } from '../components/ContextPro.jsx'
+import Contactus from '../module/Contactus.jsx'
+
+
 
 function Layout({children}) {
+  const {state} = usecard();
     const [showInput, setShowInput] = useState(false);
   
 
@@ -29,11 +35,11 @@ function Layout({children}) {
       <div className={styles.navbar}> 
           <ul>
               <li><img src={daste} alt="daste"/></li>
-            <a href=''><li>خانه</li> </a>  
-              <a href='#'> <li>فروشگاه</li> </a>
-          <a href='#'>  <li>درباره ما</li> </a>   
-             <a href='#'> <li>تماس با ما</li></a> 
-            <a href='#'> <li>وبلاگ</li></a> 
+            <a href="/"><li>خانه</li> </a>  
+          
+          <a href='/aboutus'>  <li>درباره ما</li> </a>   
+             <a href='/contactus'> <li>تماس با ما</li></a> 
+            <a href='#'> <li>پنل شما</li></a> 
           </ul>
       </div>
       <div className={styles.leftnavbar}>
@@ -43,7 +49,14 @@ function Layout({children}) {
            {showInput?<div><input type="text" /> <img src={search} alt=""  onClick={inputhand}/></div>: <img src={search} alt=""  onClick={inputhand}/>}
               </li>
               <li><img src={mah} alt="mah" /></li>
-              <li><button>ثبت نام </button></li> 
+              <li>
+                <Link to={"/propage"}>
+                <div className={styles.cartCount}>{state?.itemCounter} </div>
+                <button>سبد خرید </button>
+                </Link>
+                
+          
+                </li> 
           </ul>
       </div>
     </header>

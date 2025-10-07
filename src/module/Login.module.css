@@ -1,0 +1,87 @@
+.loginPage {
+  background-color: #1e1b24;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.loginBox {
+  background: #2a2731;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.loginBox h1 {
+  color: #ff754c;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.loginBox p {
+  color: #bbb;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background-color: #1e1b24;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.form input:focus {
+  border: 1px solid #ff754c;
+}
+
+.form button {
+  background-color: #ff754c;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.footerText {
+  margin-top: 20px;
+}
+
+.footerText p {
+  color: #bbb;
+  font-size: 14px;
+}
+
+.footerText a {
+  color: #ff754c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footerText a:hover {
+  text-decoration: underline;
+}

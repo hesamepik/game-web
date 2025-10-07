@@ -8,28 +8,28 @@ const card = [
     {
       id:1,
       title: "Call of Duty برای  کنسول پلی استیشن ",
-     price:"2/300",
+     price:2.300,
       image: img1,
       desc: "252 M"
     },
     {
        id:2,
       title: "diablo 4 برای  کنسول پلی استیشن  ",
-      price:"3/600",
+      price:3.600,
       image: img2,
       desc: "252m"
     },
     {
        id:3,
         title: "FIFA  برای  کنسول پلی استیشن ",
-        price:"4/600",
+        price:4.600,
         image: img3,
         desc: "252m"
       },
       {
          id:4,
         title: " Fortnite برای  کنسول پلی استیشن  ",
-        price:"3/600",
+        price:3.600,
         image: img4,
         desc: "252m"
       },

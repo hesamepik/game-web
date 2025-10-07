@@ -164,3 +164,18 @@ ease;
     display: flex
 ;  
   }
+.cartCount {  
+
+     position: absolute;
+    top: 40px;
+    right: 114rem;
+    background-color: #ff5e00d1;
+    color: white;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: 700;
+    min-width: 20px;
+    text-align: center;
+    line-height: 1.2;
+}

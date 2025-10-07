@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { useProductdetail } from "../components/Context.jsx"
 import "./Details.css";
 function Details() {
@@ -28,7 +28,7 @@ function Details() {
           <h1>{product.title}</h1>
           <h3>حجم: {product.desc}</h3>
           <h3>قیمت: {product.price} تومان</h3>
-          <button>افزودن به سبد خرید</button>
+         <Link to={"/propage"}> <button >افزودن به سبد خرید</button></Link>
         </div>
       </div>
     </div>
